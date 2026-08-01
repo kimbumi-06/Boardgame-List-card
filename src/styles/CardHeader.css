@@ -1,0 +1,109 @@
+
+/*카드 배경*/
+.card {
+  width: 240px;
+  height: 367px;
+  background-color: #FFF7E1;
+  border-radius: 20px;
+  overflow: hidden;
+  box-sizing: border-box;
+  font-family: "Cafe24PROSlimAir";
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 50px;
+  margin-right: 0px;
+
+  z-index: 1;
+  
+}
+
+
+/* 평점/이름 부분 */
+
+.card-header {
+  display: flex;
+  padding-top: 10px;
+  padding-bottom: 3px;
+  height: 60px;
+
+  align-items: center;
+
+  z-index: 5;
+}
+
+/*평점*/
+.rating-circle {
+  position: relative;
+  width: 63px;
+  height: 63px;
+  border-radius: 50%;
+  border: 3px solid #FFD54F;
+  background-color: #FFD54F;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+
+  flex-shrink: 0;
+  box-sizing: border-box;
+
+  margin-left: 12px;
+}
+
+.rating-image {
+  position: absolute;
+  top: 52%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 67px;
+  height: 67px;
+  margin-right: 4px;
+}
+
+.rating-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  font-weight: bold;
+  font-size: 1rem;
+  color: #313617;
+
+  cursor: pointer;
+}
+
+/*제목*/
+.title-area {
+  flex-grow: 1;
+  flex-direction: column;
+  background-color: #FFD54F;
+  padding: 3px 17px;
+  width: 180px;
+  height: 35px;
+
+  text-align: center;
+
+  margin-right: 0px;
+  margin-left: -15px;
+  
+  z-index: 4;
+}
+
+.card-title-kor {
+  font-size: 0.95rem;
+  color: #313617;
+
+  width: 100%;
+}
+
+.card-title-eng {
+  font-family: "AmaticSC-Bold";
+  font-size: 0.95rem;
+  color: #313617;
+  margin-top: 2px;
+  
+  width: 100%;
+}
